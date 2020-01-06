@@ -107,40 +107,40 @@ function buildCharts(sample) {
              return 'wfreq' + numericIds;
          });
 
-        // var guage_trace = [
-        //     {
-        //       domain: { x: [0, 1], y: [0, 1] },
-        //       //value: 450,
-        //       title: { text: "Belly Button Washing Frequency" },
-        //       type: "indicator",
-        //       mode: "gauge+number",
-        //       //delta: { reference: 380 },
-        //       gauge: {
-        //         axis: { range: [null, 9] },
-        //         steps: [
-        //           { range: [0, 2], color: "white" },
-        //           { range: [2, 4], color: "lightgray" },
-        //           { range: [4, 6], color: "lightgray" },
-        //           { range: [6, 8], color: "lightgray" },
-        //           { range: [8, 9], color: "lightgray" }
-        //         ],
-        //         threshold: {
-        //           line: { color: "red", width: 4 },
-        //           thickness: 0.75,
-        //           value: 5
-        //         }
-        //       }
-        //     }
-        //   ];
         var guage_trace = [
             {
-                domain: { x: [0, 1], y: [0, 1] },
-                value: wfreq,
-                title: { text: "Speed" },
-                type: "indicator",
-                mode: "gauge+number"
+              domain: { x: [0, 1], y: [0, 1] },
+              value: wfreq,
+              title: { text: "Belly Button Washing Frequency" },
+              type: "indicator",
+              mode: "gauge+number",
+              //delta: { reference: 380 },
+              gauge: {
+                axis: { range: [null, 9] },
+                steps: [
+                  { range: [0, 2], color: "white" },
+                  { range: [2, 4], color: "lightgray" },
+                  { range: [4, 6], color: "lightgray" },
+                  { range: [6, 8], color: "lightgray" },
+                  { range: [8, 9], color: "lightgray" }
+                ],
+                threshold: {
+                  line: { color: "red", width: 4 },
+                  thickness: 0.75,
+                  value: wfreq
+                }
+              }
             }
-        ];
+          ];
+        // var guage_trace = [
+        //     {
+        //         domain: { x: [0, 1], y: [0, 1] },
+        //         value: wfreq,
+        //         title: { text: "Speed" },
+        //         type: "indicator",
+        //         mode: "gauge+number"
+        //     }
+        // ];
 
         var guage_layout = {};
 
